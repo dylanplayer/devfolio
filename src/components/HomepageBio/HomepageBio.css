@@ -1,0 +1,14 @@
+.bio-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bio-text-container {
+  width: 100%;
+  max-width: 400px;
+}

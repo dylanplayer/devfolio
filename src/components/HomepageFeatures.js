@@ -4,32 +4,32 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Driven by Purpose',
+    Svg: require('../../static/img/goal.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Dylan is primarily driven by pupose and impact; He enjoys working on projects
+        with high impact and a strong mission.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Building for the Future',
+    Svg: require('../../static/img/maintenance.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Dylan builds quality, maintainable, code that is built for the future. Quality
+        code is built on a whiteboard, not an editor. 
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Access for Everyone',
+    Svg: require('../../static/img/key.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Dylan enjoys working on products that lower the barrier to entry, for eveyone,
+        to the world of entrepreneurship and business.
       </>
     ),
   },
