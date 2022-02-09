@@ -5,11 +5,11 @@ import './Education.css';
 const SchoolsMarkup = () => {
   const schools = [
     {
-      school: 'Homewood High School',
-      url: 'https://www.homewood.k12.al.us/hhs',
-      study: 'High School Diploma',
-      years: '2017 - 2021',
-      img: '/img/homewood-high-school.jpeg',
+      school: 'Dominican University of California',
+      url: 'https://www.dominican.edu/academics/undergraduate-programs/applied-computer-science-acs',
+      study: 'BS in Applied Computer Science',
+      years: '2021 - Present',
+      img: '/img/du.jpeg',
     },
     {
       school: 'Riverchase Carrer Connections Center',
@@ -19,11 +19,11 @@ const SchoolsMarkup = () => {
       img: '/img/rc3.jpeg',
     },
     {
-      school: 'Dominican University of California',
-      url: 'https://www.dominican.edu/academics/undergraduate-programs/applied-computer-science-acs',
-      study: 'BS in Applied Computer Science',
-      years: '2021 - Present',
-      img: '/img/du.jpeg',
+      school: 'Homewood High School',
+      url: 'https://www.homewood.k12.al.us/hhs',
+      study: 'High School Diploma',
+      years: '2017 - 2021',
+      img: '/img/homewood-high-school.jpeg',
     },
   ]
 
@@ -35,7 +35,7 @@ const SchoolsMarkup = () => {
             <a href={school.url}><img className="school-img" src={school.img}/></a>
             <div className="school-info">
               <h1 className="school-name">{school.school}</h1>
-              <p className="school-study">Field of Study: {school.study}</p>
+              <p className="school-study">{school.study}</p>
               <p className="school-years">{school.years}</p>
             </div>
           </div>

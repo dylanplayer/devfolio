@@ -1,0 +1,61 @@
+.work {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.work-title {
+  font-size: 5rem;
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  align-self: center;
+}
+
+.job {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.job-img {
+  max-height: 150px;
+  max-width: 350px;
+  border-radius: 20px;
+}
+
+.job-info {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+  .jobs {
+    gap: 2rem;
+  }
+  
+  .job {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: .3rem .3rem 1rem .3rem #5C7AEA;
+    border-radius: 20px;
+  }
+
+  .job-img {
+    max-width: none;
+    width: 100%;
+  }
+}
