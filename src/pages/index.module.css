@@ -4,7 +4,7 @@
  */
 
 .heroBanner {
-  height: 85vh;
+  height: 50vh;
   display: flex;
   flex-direction: row;
   text-align: left;
