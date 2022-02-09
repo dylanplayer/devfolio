@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {useColorMode} from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
 import './Portfolio.css';
 
@@ -93,7 +94,7 @@ const Projects = () => {
     },
   ];
 
-  const [theme, setTheme] = useState(document.documentElement.getAttribute('data-theme'));
+  const {isDarkTheme} = useColorMode();
 
   return (
     <div className='projects'>
@@ -106,7 +107,7 @@ const Projects = () => {
               <div className='languages'>
                 {project.languages.map((language, j) => {
                   return (
-                    <img key={j} className='language-image' src={theme == 'dark' && language.alt ? language.alt : language.image} alt={language.name}/>
+                    <img key={j} className='language-image' src={isDarkTheme && language.alt ? language.alt : language.image} alt={language.name}/>
                   );
                 })}
               </div>
