@@ -33,10 +33,10 @@ const JobsMarkup = () => {
 
   return (
     <div className="jobs">
-      {jobs.map((job) => {
+      {jobs.map((job, i) => {
         return (
-          <div className="job">
-            <a href={job.url}><img className="job-img" src={job.img}/></a>
+          <div className="job" key={i}>
+            <div className="job-img-container"><a href={job.url}><img className="job-img" src={job.img}/></a></div>
             <div className="job-info">
               <h1 className="company-name">{job.company}</h1>
               <p className="job-title">{job.title}</p>
