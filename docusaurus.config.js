@@ -55,7 +55,7 @@ const config = {
           {to: '/contact', label: 'Contact', position: 'left'},
           {href: 'https://github.com/dylanplayer', label: 'GitHub', position: 'right'},
           {href: 'https://www.linkedin.com/in/dylan-player/', label: 'LinkedIn', position: 'right'},
-          {href: 'https://instagram.com/u/dylanplayer', label: 'Instagram', position: 'right'},
+          {href: 'https://twitter.com/dylanplayer', label: 'Twitter', position: 'right'},
         ],
       },
       footer: {

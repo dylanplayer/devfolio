@@ -4,19 +4,24 @@
  */
 
 .heroBanner {
+  height: 85vh;
   display: flex;
   flex-direction: row;
   text-align: left;
+  flex-wrap: nowrap;
   position: relative;
   overflow: hidden;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   padding-bottom: 4rem;
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    height: 50vh;
   }
 }
 
