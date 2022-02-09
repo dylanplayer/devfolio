@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('../../static/img/goal.svg').default,
     description: (
       <>
-        Dylan is primarily driven by pupose and impact; He enjoys working on projects
+        Dylan is primarily driven by pupose and impact. He enjoys working on projects
         with high impact and a strong mission.
       </>
     ),
@@ -18,8 +18,8 @@ const FeatureList = [
     Svg: require('../../static/img/maintenance.svg').default,
     description: (
       <>
-        Dylan builds quality, maintainable, code that is built for the future. Quality
-        code is built on a whiteboard, not an editor. 
+        Dylan builds quality, maintainable, code that is built for the future. <string>"Quality
+        code is built on a whiteboard, not an editor."</string>
       </>
     ),
   },
@@ -28,7 +28,7 @@ const FeatureList = [
     Svg: require('../../static/img/key.svg').default,
     description: (
       <>
-        Dylan enjoys working on products that lower the barrier to entry, for eveyone,
+        Dylan enjoys working on products that lower the barrier to entry
         to the world of entrepreneurship and business.
       </>
     ),
