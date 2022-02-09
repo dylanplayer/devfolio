@@ -29,9 +29,9 @@ const SchoolsMarkup = () => {
 
   return (
     <div className="schools">
-      {schools.map((school) => {
+      {schools.map((school, i) => {
         return (
-          <div className="school">
+          <div className="school" key={i}>
             <a href={school.url}><img className="school-img" src={school.img}/></a>
             <div className="school-info">
               <h1 className="school-name">{school.school}</h1>
