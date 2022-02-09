@@ -1,0 +1,61 @@
+.education {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.education-title {
+  font-size: 5rem;
+}
+
+.schools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  align-self: center;
+}
+
+.school {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.school-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+}
+
+.school-info {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+  .schools {
+    gap: 2rem;
+  }
+  
+  .school {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: .3rem .3rem 1rem .3rem #5C7AEA;
+    border-radius: 20px;
+  }
+
+  .school-img {
+    max-width: none;
+    width: 100%;
+  }
+}

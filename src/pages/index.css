@@ -1,11 +1,24 @@
 .hero-title {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .hero-image {
-  height: 200px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-image {
+    display: none;
+  }
 }
