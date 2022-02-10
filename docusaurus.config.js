@@ -75,6 +75,13 @@ const config = {
     }),
     plugins: [
       [
+        '@docusaurus/plugin-google-gtag',
+        {
+          trackingID: 'G-H6VP97KX1J',
+          anonymizeIP: true,
+        },
+      ],
+      [
         '@docusaurus/plugin-google-analytics',
         {
           trackingID: 'G-H6VP97KX1J',
