@@ -24,13 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
+          // editUrl:'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -53,15 +53,15 @@ const config = {
           {to: '/education', label: 'Education', position: 'left'},
           {to: '/work', label: 'Work', position: 'left'},
           {to: '/contact', label: 'Contact', position: 'left'},
-          {href: 'https://github.com/dylanplayer', label: 'GitHub', position: 'right'},
-          {href: 'https://www.linkedin.com/in/dylan-player/', label: 'LinkedIn', position: 'right'},
-          {href: 'https://twitter.com/dylanplayer', label: 'Twitter', position: 'right'},
+          {to: 'blog', label: 'Blog', position: 'right'},
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          
+          {href: 'https://github.com/dylanplayer', label: 'GitHub', position: 'right'},
+          {href: 'https://www.linkedin.com/in/dylan-player/', label: 'LinkedIn', position: 'right'},
+          {href: 'https://twitter.com/dylanplayer', label: 'Twitter', position: 'right'},
         ],
         copyright: `© ${new Date().getFullYear()}, Dylan Player`,
       },
@@ -79,12 +79,6 @@ const config = {
         {
           trackingID: 'G-H6VP97KX1J',
           anonymizeIP: true,
-        },
-      ],
-      [
-        '@docusaurus/plugin-google-analytics',
-        {
-          trackingID: 'G-H6VP97KX1J',
         },
       ],
     ],
