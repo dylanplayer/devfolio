@@ -30,17 +30,17 @@ const Contact = () => {
       <h1 className='form-title'>Contact</h1>
       <fieldset>
         <label>Name</label>
-        <input type="text" name="user_name" />
+        <input required type="text" name="user_name" />
       </fieldset>
       <fieldset>
         <label>Email</label>
-        <input type="email" name="user_email" />
+        <input required type="email" name="user_email" />
       </fieldset>
       <fieldset>
         <label>Message</label>
-        <textarea name="message" />
+        <textarea required name="message" />
       </fieldset>
-      <button type="submit">{isLoading ? loadingMarkup : <></>}Send</button>
+      <button type="submit" className='submit-button'>{isLoading ? loadingMarkup : <div className='hidden'></div>}Send</button>
     </form>
   );
 
