@@ -16,11 +16,14 @@ const Contact = () => {
       .then((result) => {
           setResult(result.text);
           setIsLoading(false);
-          console.log(result)
       }, (error) => {
           console.log(error.text);
     });
   };
+
+  const loadingMarkup = (
+    <div className='loader'></div>
+  );
 
   const formMarkup = (
     <form ref={form} onSubmit={sendEmail}>
@@ -37,8 +40,7 @@ const Contact = () => {
         <label>Message</label>
         <textarea name="message" />
       </fieldset>
-      <input type="submit" value="Send"/>
-      {isLoading ? loadingMarkup : <></>}
+      <button type="submit">{isLoading ? loadingMarkup : <></>}Send</button>
     </form>
   );
 
@@ -47,15 +49,11 @@ const Contact = () => {
       <h1 className='success-title'>🎉 Successfuly Sent 🎉</h1>
     </div>
   );
-
-  const loadingMarkup = (
-      <div className='loader'>Loading...</div>
-  );
   
   return (
     <Layout>
       <div className='contact'>
-        {result == 'OK' ? successMarkup : formMarkup }
+        {result == 'OK' ? successMarkup : formMarkup }        
       </div>
     </Layout>
   );
