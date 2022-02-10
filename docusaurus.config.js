@@ -72,8 +72,15 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
       },
-
     }),
+    plugins: [
+      [
+        '@docusaurus/plugin-google-analytics',
+        {
+          trackingID: 'G-SQVB4BSGK9',
+        },
+      ],
+    ],
 };
 
 module.exports = config;
