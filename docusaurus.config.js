@@ -77,7 +77,7 @@ const config = {
       [
         '@docusaurus/plugin-google-analytics',
         {
-          trackingID: 'G-SQVB4BSGK9',
+          trackingID: 'G-H6VP97KX1J',
         },
       ],
     ],
