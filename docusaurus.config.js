@@ -8,14 +8,25 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Dylan Player',
   tagline: '',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://dylanplayer.com',
   baseUrl: '/',
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Dylan Player', // Usually your GitHub org/user name.
-  projectName: 'devfolio', // Usually your repo name.
-
+  organizationName: 'dylanplayer',
+  projectName: 'devfolio',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+      },
+    },
+  },
+  
   presets: [
     [
       'classic',
@@ -23,14 +34,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/tutorials',
         },
         blog: {
           showReadingTime: true,
           blogSidebarTitle: 'All posts',
           blogSidebarCount: 'ALL',
-          // editUrl:'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -54,6 +63,7 @@ const config = {
           {to: '/work', label: 'Work', position: 'left'},
           {to: '/contact', label: 'Contact', position: 'left'},
           {to: 'blog', label: 'Blog', position: 'right'},
+          {to: 'tutorials', label: 'Tutorials', position: 'right'},
         ],
       },
       footer: {
@@ -72,6 +82,7 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
       },
+      hideableSidebar: true,
     }),
     plugins: [
       [
