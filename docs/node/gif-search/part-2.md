@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+slug: "create-server"
 ---
 
 # Create Server
@@ -174,7 +175,7 @@ In your terminal run the following commands, to push your current code to the ad
 git add .
 ```
 
-```bash title="Commit current changes and call the commit Init. (The -m flag lets us add a message)"
+```bash title="Commit current changes and call the commit Added Server. (The -m flag lets us add a message)"
 git commit -m "Added Server"
 ```
 
