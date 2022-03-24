@@ -26,7 +26,7 @@ Go to this [website](https://www.toptal.com/developers/gitignore/api/node). Copy
 [ExpressJS](https://expressjs.com) is a [NodeJS](https://nodejs.dev) package that allows us to, easily, create a web server. Run the following command to install [ExpressJS](https://expressjs.com).
 
 ```bash title="Install express with npm"
-npm install express
+npm install express@4.17.3
 ```
 
 ## Create Server
@@ -103,7 +103,7 @@ nodemon
 Right now our server is just responding with text, let's get it to respond with `<html>`. Handlebars is an express view engine that allows us to render data in our `<html>`. Run the following commands to use Handlebars.
 
 ```bash title="Install Handlebars"
-npm install express-handlebars
+npm install express-handlebars@6.0.3
 ```
 
 ```bash title="Create folder for html"
@@ -158,7 +158,7 @@ app.set('view engine', 'handlebars');
 app.set("views", "./views");
 ```
 
-Now that we have our middleware setup we can render some `<html>`. We can do this using the `req.render()` function. This function takes in the view name and configuration options. We are going to pass in `'home'` as the view name and use the default configuration by not passing in a second parameter.
+Now that we have our middleware setup we can render some `<html>`. We can do this using the `res.render()` function. This function takes in the view name and configuration options. We are going to pass in `'home'` as the view name and use the default configuration by not passing in a second parameter.
 
 ```js title="Update our root route to show the home view"
 app.get('/', 
