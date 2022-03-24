@@ -44,7 +44,7 @@ Nice! You should see your search term in the terminal, whenever you submit the f
 You might be wondering how we are going to get some gifs. Were going to scrape the entire internet for them... just kidding. A company called [Tenor](https://tenor.com/) has an Application Programming Interface (API) that we can use. Head over to this [link](https://tenor.com/developer/keyregistration) and get an API key. Once you have your API key store it somewhere safe, we are going to use it in a sec. We are going to use something called [Node Fetch](https://www.npmjs.com/package/node-fetch) to make requests to Tenor's API. Let's get [Node Fetch](https://www.npmjs.com/package/node-fetch) setup.
 
 ```bash title="Install Node Fetch"
-npm install node-fetch@2
+npm install node-fetch@2.6.7
 ```
 
 ```js title="Import Node Fetch at the top of app.js"
@@ -54,7 +54,7 @@ const fetch = require('node-fetch');
 We are also going to want to install the [dotenv package](https://www.npmjs.com/package/dotenv). The [dotenv package](https://www.npmjs.com/package/dotenv) package will allow us to get variables from a `.env` file. We want to store our API keys in a `.env` file because we want to keep them private. Let's get [dotenv](https://www.npmjs.com/package/dotenv) setup.
 
 ```bash title="Install Dotenv"
-npm install dotenv
+npm install dotenv@16.0.0
 ```
 
 ```js title="Import our .env variables at the top of app.js"

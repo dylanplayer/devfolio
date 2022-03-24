@@ -26,7 +26,7 @@ Go to this [website](https://www.toptal.com/developers/gitignore/api/node). Copy
 [ExpressJS](https://expressjs.com) is a [NodeJS](https://nodejs.dev) package that allows us to, easily, create a web server. Run the following command to install [ExpressJS](https://expressjs.com).
 
 ```bash title="Install express with npm"
-npm install express
+npm install express@4.17.3
 ```
 
 ## Create Server
@@ -40,7 +40,7 @@ const express = require('express');
 const app = express();
 ```
 
-Servers work by making responses to requests that users send them. Users will make `GET` requests to your server in order to get information. We can respond to these requests by using the `app.get()` function. This function takes in two parameters: the route and a function. The route is the address users make the request to for example when you go to `https://facebook.com/` you are making a get request to the `/` route. The function is called when a user visits this route, this function takes in two parameters: `req` and `res`. `req` stands for the request sent to the route and `res` stands for the response that the server is going to make. 
+Servers work by making responses to requests that users send them. Users will make `GET` requests to your server in order to get information. We can respond to these requests by using the `app.get()` function. This function takes in two parameters: the path and a function. The path is the address users make the request to. For example, when you go to `https://facebook.com/` you are making a get request to the `/` path. The function is called when a user visits this route, this function takes in two parameters: `req` and `res`. `req` stands for the request sent to the route and `res` stands for the response that the server is going to make. 
 
 ```js title="Create a route that responds to a GET request with Hello, World!"
 app.get('/', 
@@ -103,7 +103,7 @@ nodemon
 Right now our server is just responding with text, let's get it to respond with `<html>`. Handlebars is an express view engine that allows us to render data in our `<html>`. Run the following commands to use Handlebars.
 
 ```bash title="Install Handlebars"
-npm install express-handlebars
+npm install express-handlebars@6.0.3
 ```
 
 ```bash title="Create folder for html"
@@ -158,7 +158,7 @@ app.set('view engine', 'handlebars');
 app.set("views", "./views");
 ```
 
-Now that we have our middleware setup we can render some `<html>`. We can do this using the `req.render()` function. This function takes in the view name and configuration options. We are going to pass in `'home'` as the view name and use the default configuration by not passing in a second parameter.
+Now that we have our middleware setup we can render some `<html>`. We can do this using the `res.render()` function. This function takes in the view name and configuration options. We are going to pass in `'home'` as the view name and use the default configuration by not passing in a second parameter.
 
 ```js title="Update our root route to show the home view"
 app.get('/', 
