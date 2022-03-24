@@ -40,7 +40,7 @@ const express = require('express');
 const app = express();
 ```
 
-Servers work by making responses to requests that users send them. Users will make `GET` requests to your server in order to get information. We can respond to these requests by using the `app.get()` function. This function takes in two parameters: the route and a function. The route is the address users make the request to for example when you go to `https://facebook.com/` you are making a get request to the `/` route. The function is called when a user visits this route, this function takes in two parameters: `req` and `res`. `req` stands for the request sent to the route and `res` stands for the response that the server is going to make. 
+Servers work by making responses to requests that users send them. Users will make `GET` requests to your server in order to get information. We can respond to these requests by using the `app.get()` function. This function takes in two parameters: the path and a function. The path is the address users make the request to. For example, when you go to `https://facebook.com/` you are making a get request to the `/` path. The function is called when a user visits this route, this function takes in two parameters: `req` and `res`. `req` stands for the request sent to the route and `res` stands for the response that the server is going to make. 
 
 ```js title="Create a route that responds to a GET request with Hello, World!"
 app.get('/', 
