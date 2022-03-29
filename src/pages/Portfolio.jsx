@@ -6,6 +6,59 @@ import './Portfolio.css';
 const Projects = () => {
   const projects = [
     {
+      name: 'Evently',
+      description: 'Event planning & management application',
+      languages: [
+        {
+          name: 'Javascript',
+          image: '/img/js.png',
+        },
+        {
+          name: 'NodeJS',
+          image: '/img/node.png',
+        },
+        {
+          name: 'Postgresql',
+          image: '/img/pgsql.png',
+        },
+      ],
+      liveURL: 'https://evently.dylanplayer.com/',
+      repoURL: 'https://github.com/dylanplayer/event-planner',
+    },
+    {
+      name: 'Musk Bot',
+      description: 'Generates tweets based on Elon Musks\' tweets in 2021.',
+      languages: [
+        {
+          name: 'Python',
+          image: '/img/python.png',
+        },
+        {
+          name: 'Flask',
+          image: '/img/flask.png',
+          alt: '/img/flask-alt.png',
+        },
+      ],
+      liveURL: 'http://muskbot.ml',
+      repoURL: 'https://github.com/dylanplayer/Tweet-Generator',
+    },
+    {
+      name: 'Gif Search',
+      description: 'Gif searching application using tenor',
+      languages: [
+        {
+          name: 'Javascript',
+          image: '/img/js.png',
+        },
+        {
+          name: 'NodeJS',
+          image: '/img/node.png',
+        },
+      ],
+      liveURL: 'https://gif-search.dylanplayer.com/',
+      repoURL: 'https://github.com/dylanplayer/Node-Gif-Search-Tutorial',
+    },
+    {
       name: 'Yeti Supply Co',
       description: 'Basic online store with dynamic products and users',
       languages: [
@@ -27,23 +80,6 @@ const Projects = () => {
       repoURL: 'https://github.com/dylanplayer/Yeti-Supply-Co',
     },
     {
-      name: 'Musk Bot',
-      description: 'Generates tweets based on Elon Musks\' tweets in 2021.',
-      languages: [
-        {
-          name: 'Python',
-          image: '/img/python.png',
-        },
-        {
-          name: 'Flask',
-          image: '/img/flask.png',
-          alt: '/img/flask-alt.png',
-        },
-      ],
-      liveURL: 'http://muskbot.ml',
-      repoURL: 'https://github.com/dylanplayer/Tweet-Generator',
-    },
-    {
       name: 'SFPOPOS',
       description: 'Wepage displaying San Francisco Privately Owned Public Spaces',
       languages: [
@@ -58,18 +94,6 @@ const Projects = () => {
       ],
       liveURL: 'https://sfpopos.dylanplayer.com/',
       repoURL: 'https://github.com/dylanplayer/sfpopos',
-    },
-    {
-      name: 'Break Out',
-      description: 'Basic JS canvas game built to learn how to use JS Context',
-      languages: [
-        {
-          name: 'Javascript',
-          image: '/img/js.png',
-        },
-      ],
-      liveURL: 'https://break-out-beta.vercel.app/',
-      repoURL: 'https://github.com/dylanplayer/break-out',
     },
     {
       name: 'Charity Tracker',
@@ -92,6 +116,18 @@ const Projects = () => {
       liveURL: 'https://charity-tracker.dylanplayer.com/',
       repoURL: 'https://github.com/dylanplayer/Charity-Tracker',
     },
+    // {
+    //   name: 'Break Out',
+    //   description: 'Basic JS canvas game built to learn how to use JS Context',
+    //   languages: [
+    //     {
+    //       name: 'Javascript',
+    //       image: '/img/js.png',
+    //     },
+    //   ],
+    //   liveURL: 'https://break-out-beta.vercel.app/',
+    //   repoURL: 'https://github.com/dylanplayer/break-out',
+    // },
   ];
 
   const {isDarkTheme} = useColorMode();
