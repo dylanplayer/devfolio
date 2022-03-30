@@ -59,7 +59,7 @@ npm init -y
 code .
 ```
 
-Now that your code is open in VSCode press `CMD + ~` to open the terminal. Run the following command.
+Now that your code is open in VSCode press `CTRL + ~` to open the terminal. Run the following command.
 
 ```bash title="Create a new file called app.js"
 touch app.js
