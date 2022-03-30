@@ -159,4 +159,4 @@ git pull
 ```
 
 ## 🎉 Congrats 🎉
-Nice! You just finished Dylan Player's Gif Search NodeJS Tutorial. Hope you enjoyed!
+Nice! You just finished Dylan Player's Gif Search NodeJS Tutorial. Hope you enjoyed! Feel free to checkout other tutorials [here](https://dylanplayer.com/tutorials). If you noticed any problems feel free to make a pull request [here](https://github.com/dylanplayer/devfolio/tree/main/docs/node/gif-search). 
