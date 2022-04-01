@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {useColorMode} from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
-import './Portfolio.css';
+import '../css/Portfolio.css';
 
 const Projects = () => {
   const projects = [
@@ -116,18 +116,6 @@ const Projects = () => {
       liveURL: 'https://charity-tracker.dylanplayer.com/',
       repoURL: 'https://github.com/dylanplayer/Charity-Tracker',
     },
-    // {
-    //   name: 'Break Out',
-    //   description: 'Basic JS canvas game built to learn how to use JS Context',
-    //   languages: [
-    //     {
-    //       name: 'Javascript',
-    //       image: '/img/js.png',
-    //     },
-    //   ],
-    //   liveURL: 'https://break-out-beta.vercel.app/',
-    //   repoURL: 'https://github.com/dylanplayer/break-out',
-    // },
   ];
 
   const {isDarkTheme} = useColorMode();
@@ -162,8 +150,8 @@ const Projects = () => {
 const Portfolio = () => {
   return (
     <Layout>
-      <div className='portfolio'>
-        <h1 className='portfolio-title'>Portfolio</h1>
+      <div className='page'>
+        <h1 className='page-title'>Portfolio</h1>
         <Projects />
       </div>
     </Layout>

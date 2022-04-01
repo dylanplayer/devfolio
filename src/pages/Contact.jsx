@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import Layout from '@theme/Layout';
-import './Contact.css';
+import '../css/Contact.css';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {

@@ -62,6 +62,7 @@ const config = {
           {to: '/education', label: 'Education', position: 'left'},
           {to: '/work', label: 'Work', position: 'left'},
           {to: '/contact', label: 'Contact', position: 'left'},
+          {to: '/news', label: 'News', position: 'right'},
           {to: 'blog', label: 'Blog', position: 'right'},
           {to: 'tutorials', label: 'Tutorials', position: 'right'},
         ],

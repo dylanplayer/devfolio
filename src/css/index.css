@@ -1,4 +1,29 @@
-.education {
+.hero-title {
+  font-size: 4rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 350px;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-image {
+    display: none;
+  }
+}
+
+.page {
   overflow-x: hidden;
   width: 100vw;
   display: flex;
@@ -7,13 +32,14 @@
   gap: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
-.education-title {
+.page-title {
   font-size: 5rem;
 }
 
-.schools {
+.cards-v {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +47,7 @@
   align-self: center;
 }
 
-.school {
+.card-h {
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -32,28 +58,29 @@
   padding: 1rem;
 }
 
-.school-img {
-  width: 100%;
-  max-width: 350px;
+.card-h-img {
+  object-fit: cover;
+  height: 220px;
+  width: 350px;
   border-radius: 20px;
 }
 
-.school-info {
+.card-h-info {
   width: 400px;
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (max-width: 900px) {
-  .education-title {
+  .card-h-title {
     font-size: 4rem;
   }
 
-  .schools {
+  .cards-v {
     gap: 2rem;
   }
   
-  .school {
+  .card-h {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -61,12 +88,13 @@
     border-radius: 20px;
   }
 
-  .school-img {
+  .card-h-img {
     max-width: none;
     width: 100%;
+    height: auto;
   }
 
-  .school-info {
+  .card-h-info {
     width: 100%;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from '@theme/Layout';
-import './Education.css';
+import '../css/Education.css';
 
 const SchoolsMarkup = () => {
   const schools = [
@@ -28,15 +28,15 @@ const SchoolsMarkup = () => {
   ]
 
   return (
-    <div className="schools">
+    <div className="cards-v">
       {schools.map((school, i) => {
         return (
-          <div className="school" key={i}>
-            <a href={school.url}><img className="school-img" src={school.img}/></a>
-            <div className="school-info">
-              <h1 className="school-name">{school.school}</h1>
-              <p className="school-study">{school.study}</p>
-              <p className="school-years">{school.years}</p>
+          <div className="card-h" key={i}>
+            <a href={school.url}><img className="card-h-img" src={school.img}/></a>
+            <div className="card-h-info">
+              <h1 className="card-h-name">{school.school}</h1>
+              <p className="card-h-text">{school.study}</p>
+              <p className="card-h-text">{school.years}</p>
             </div>
           </div>
         );
@@ -48,8 +48,8 @@ const SchoolsMarkup = () => {
 const Education = () => {
   return (
     <Layout>
-      <div className="education">
-        <h1 className="education-title">Education</h1>
+      <div className="page">
+        <h1 className="page-title">Education</h1>
         <SchoolsMarkup />
       </div>
     </Layout>
