@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from '@theme/Layout';
-import './Work.css';
+import '../css/Work.css';
 
 const JobsMarkup = () => {
   const jobs = [
@@ -53,8 +53,8 @@ const JobsMarkup = () => {
 const Work = () => {
   return (
     <Layout>
-      <div className="work">
-        <h1 className="work-title">Work</h1>
+      <div className="page">
+        <h1 className="page-title">Work</h1>
         <JobsMarkup />
       </div>  
     </Layout>
