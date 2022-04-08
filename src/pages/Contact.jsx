@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react';
 import Layout from '@theme/Layout';
 import '../css/Contact.css';
 import emailjs from '@emailjs/browser';
+import { Widget } from '@typeform/embed-react';
 
 const Contact = () => {
   const form = useRef();
@@ -52,9 +53,10 @@ const Contact = () => {
   
   return (
     <Layout>
-      <div className='contact'>
+      {/* <div className='contact'>
         {result == 'OK' ? successMarkup : formMarkup }        
-      </div>
+      </div> */}
+      <Widget id="n7sOfYFO" style={{width: '100%', height: '85vh'}} />
     </Layout>
   );
 }
