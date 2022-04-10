@@ -6,6 +6,23 @@ import '../css/Portfolio.css';
 const Projects = () => {
   const projects = [
     {
+      name: 'Hedgehog',
+      description: 'Web app that approves and denies loan applications',
+      languages: [
+        {
+          name: 'React',
+          image: '/img/python.png',
+        },
+        {
+          name: 'Flask',
+          image: '/img/flask.png',
+          alt: '/img/flask-alt.png',
+        },
+      ],
+      liveURL: 'https://hedgehog.dylanplayer.com',
+      repoURL: 'https://github.com/YHacks-Hedgehogs/hedgehog-web',
+    },
+    {
       name: 'Evently',
       description: 'Event planning & management application',
       languages: [
