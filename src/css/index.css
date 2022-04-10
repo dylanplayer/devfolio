@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .hero-title {
   font-size: 4rem;
 }
