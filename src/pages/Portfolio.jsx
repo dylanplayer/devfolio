@@ -11,7 +11,7 @@ const Projects = () => {
       languages: [
         {
           name: 'React',
-          image: '/img/python.png',
+          image: '/img/react.png',
         },
         {
           name: 'Flask',
