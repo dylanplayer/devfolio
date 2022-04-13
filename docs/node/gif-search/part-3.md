@@ -41,7 +41,7 @@ app.get('/',
 Nice! You should see your search term in the terminal, whenever you submit the form.
 
 ## Connect Tenor
-You might be wondering how we are going to get some gifs. Were going to scrape the entire internet for them... just kidding. A company called [Tenor](https://tenor.com/) has an Application Programming Interface (API) that we can use. Head over to this [link](https://tenor.com/developer/keyregistration) and get an API key. Once you have your API key store it somewhere safe, we are going to use it in a sec. We are going to use something called [Node Fetch](https://www.npmjs.com/package/node-fetch) to make requests to Tenor's API. Let's get [Node Fetch](https://www.npmjs.com/package/node-fetch) setup.
+You might be wondering how we are going to get some gifs. We're going to scrape the entire internet for them... just kidding. A company called [Tenor](https://tenor.com/) has an Application Programming Interface (API) that we can use. Head over to this [link](https://tenor.com/developer/keyregistration) and get an API key. Once you have your API key store it somewhere safe, we are going to use it in a sec. We are going to use something called [Node Fetch](https://www.npmjs.com/package/node-fetch) to make requests to Tenor's API. Let's get [Node Fetch](https://www.npmjs.com/package/node-fetch) setup.
 
 ```bash title="Install Node Fetch"
 npm install node-fetch@2.6.7
