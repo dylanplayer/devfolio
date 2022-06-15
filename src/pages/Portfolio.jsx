@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     {
       name: 'Quick',
-      description: 'Node CLI that makes basic git workflows much easier.',
+      description: 'Node CLI that makes basic git workflows much easier',
       languages: [
         {
           name: 'Javascript',
@@ -23,7 +23,7 @@ const Projects = () => {
     },
     {
       name: 'Wallet Buttons',
-      description: 'React UI library with Solana wallet connect buttons.',
+      description: 'React UI library with Solana wallet connect buttons',
       languages: [
         {
           name: 'React',
