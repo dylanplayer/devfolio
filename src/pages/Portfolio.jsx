@@ -6,6 +6,34 @@ import '../css/Portfolio.css';
 const Projects = () => {
   const projects = [
     {
+      name: 'Quick',
+      description: 'Node CLI that makes basic git workflows much easier.',
+      languages: [
+        {
+          name: 'Javascript',
+          image: '/img/js.png',
+        },
+        {
+          name: 'NodeJS',
+          image: '/img/node.png',
+        },
+      ],
+      liveURL: 'https://www.npmjs.com/package/@dylanplayer/quick',
+      repoURL: 'https://github.com/dylanplayer/quick',
+    },
+    {
+      name: 'Wallet Buttons',
+      description: 'React UI library with Solana wallet connect buttons.',
+      languages: [
+        {
+          name: 'React',
+          image: '/img/react.png',
+        },
+      ],
+      liveURL: 'https://www.npmjs.com/package/wallet-connect-buttons',
+      repoURL: 'https://github.com/dylanplayer/wallet-connect-buttons',
+    },
+    {
       name: 'Hedgehog',
       description: 'Web app that approves and denies loan applications',
       languages: [
