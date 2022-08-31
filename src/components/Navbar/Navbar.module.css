@@ -1,0 +1,123 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  color: #F8F8F2;
+  background-color: rgb(37, 37, 37);
+}
+
+.navbarContainerStart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.navbarContainerEnd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.navbarLink {
+  color: #F8F8F2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbarLink:hover {
+  transition: color 300ms;
+  color: #5C7AEA;
+}
+
+.navbarBrand {
+  height: 32px;
+}
+
+.navbarBrandName {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.menuButton {
+  background-color: transparent;
+  border: none;
+}
+
+.menuButton:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.navigationOverlay {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navigationDrawer {
+  height: 100%;
+  width: 100%;
+  max-width: 425px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #181919;
+  overflow-x: hidden;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigationDrawerBrandContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.navigationDrawerHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: rgb(37, 37, 37);
+}
+
+.navigationDrawerBody {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1rem;
+}
+
+.navigationDrawerLink {
+  color: #F8F8F2;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+
+.navigationDrawerLink:hover {
+  transition: color 300ms;
+  color: #5C7AEA;
+  cursor: pointer;
+}

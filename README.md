@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://dylanplayer.com"><img alt="Dylan Player Logo" src="https://github.com/dylanplayer/devfolio/blob/main/static/img/logo.png?raw=true" align="center" height="250"></a>
+  <a href="https://dylanplayer.com"><img alt="Dylan Player Logo" src="archive/static/img/logo.png" align="center" height="250"></a>
 </div>
 
 # [Dylan Player](https://dylanplayer.com)
@@ -17,5 +17,5 @@ $ yarn
 ### Local Development
 
 ```
-$ yarn start
+$ yarn dev
 ```
