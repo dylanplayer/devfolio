@@ -17,6 +17,8 @@
     "aws-sdk": "^2.1176.0",
     "bcrypt": "^5.0.1",
     "formidable": "^2.0.1",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^13.0.1",
     "next": "^12.2.0",
     "next-auth": "^4.9.0",
     "react": "18.2.0",
@@ -25,6 +27,7 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/formidable": "^2.0.5",
+    "@types/markdown-it": "^12.2.3",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",

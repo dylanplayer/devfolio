@@ -1,4 +1,5 @@
 ---
+parent: gif-search
 sidebar_position: 4
 slug: "styling"
 ---
