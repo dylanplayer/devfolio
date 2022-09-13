@@ -19,4 +19,11 @@ const withMDX = require('@next/mdx')({
 module.exports = nextConfig, withMDX({
   // Append the default value with md extensions
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  webpackDevMiddleware: config => {
+    config.watchOptions = {
+      poll: 1000,
+      aggregateTimeout: 300,
+    }
+    return config
+  },
 })

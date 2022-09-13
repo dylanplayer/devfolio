@@ -1,5 +1,6 @@
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl"]
 }
 
 datasource db {
@@ -40,12 +41,12 @@ model Job {
 }
 
 model School {
-  id          String   @id @default(cuid())
-  name        String
-  degree      String
-  timeframe   String
-  url         String
-  img         String
-  created_at  DateTime @default(now())
-  updated_at  DateTime @updatedAt
+  id         String   @id @default(cuid())
+  name       String
+  degree     String
+  timeframe  String
+  url        String
+  img        String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
 }
