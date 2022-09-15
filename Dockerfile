@@ -8,8 +8,8 @@ WORKDIR /app
 
 RUN yarn install --frozen-lockfile --ignore-engines
 
-RUN yarn build
 RUN npx prisma generate
+RUN yarn build
 
 EXPOSE 3000
 CMD [ "yarn", "run", "prod" ]
