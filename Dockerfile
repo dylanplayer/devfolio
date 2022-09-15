@@ -1,6 +1,7 @@
 FROM node:18.9.0-alpine
 
 RUN apk --no-cache add nodejs yarn --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+RUN apk --no-cache add --virtual builds-deps build-base python
 
 RUN mkdir -p /app
 ENV PORT 3000
