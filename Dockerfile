@@ -1,12 +1,15 @@
-FROM node:16-alpine
+FROM node:18.9.0
+
+RUN mkdir -p /app
+ENV PORT 3000
 
 COPY . /app
-
 WORKDIR /app
 
-RUN npm install -g yarn
-RUN yarn install
+RUN yarn install --frozen-lockfile --ignore-engines
+
+RUN npx prisma generate
+RUN yarn build
 
 EXPOSE 3000
-
-CMD [ "yarn", "dev" ]
+CMD [ "yarn", "run", "prod" ]
