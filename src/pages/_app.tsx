@@ -1,17 +1,36 @@
-import '../styles/globals.css'
+import { useEffect } from 'react';
 import type { AppProps } from 'next/app'
-import Navbar from '../components/Navbar';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { NextUIProvider } from '@nextui-org/react';
 import { createTheme } from "@nextui-org/react"
-import Footer from '../components/Footer';
 import { SessionProvider } from 'next-auth/react';
+
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import * as ga from '../../lib/ga';
+import '../styles/globals.css'
+
 
 const darkTheme = createTheme({
   type: 'dark',
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      ga.pageview(url);
+    }
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    }
+  }, [router.events]);
+
   return (
     <SessionProvider session={pageProps.session}>
       <NextUIProvider theme={darkTheme}>
