@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://dylanplayer.com"><img alt="Dylan Player Logo" src="archive/static/img/logo.png" align="center" height="250"></a>
+  <a href="https://dylanplayer.com"><img alt="Dylan Player Logo" src="public/images/logo.png" align="center" height="250"></a>
 </div>
 
 # [Dylan Player](https://dylanplayer.com)
