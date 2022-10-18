@@ -3,7 +3,16 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['dylanplayer.s3.us-west-1.amazonaws.com'],
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/tutorials/:page*',
+        destination: 'https://tutorials.dylanplayer.com/tutorials/:page*',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 const withMDX = require('@next/mdx')({
