@@ -59,6 +59,7 @@ const Navbar = () => {
               <Link href='/education' className={styles.navbarLink}><a className={styles.navbarLink}>Education</a></Link>
               <Link href='/work' className={styles.navbarLink}><a className={styles.navbarLink}>Work</a></Link>
               <Link href='/contact' className={styles.navbarLink}><a className={styles.navbarLink}>Contact</a></Link>
+              <Link href='https://tutorials.dylanplayer.com' className={styles.navbarLink}><a className={styles.navbarLink}>Tutorials</a></Link>
             </>
           }
         </div>
@@ -76,7 +77,7 @@ const Navbar = () => {
             <Link href='/portfolio' className={styles.navigationDrawerLink}><a className={styles.navigationDrawerLink}>Portfolio</a></Link>
             <Link href='/education' className={styles.navigationDrawerLink}><a className={styles.navigationDrawerLink}>Education</a></Link>
             <Link href='/work' className={styles.navigationDrawerLink}><a className={styles.navigationDrawerLink}>Work</a></Link>
-            <Link href='/contact' className={styles.navigationDrawerLink}><a className={styles.navigationDrawerLink}>Contact</a></Link>
+            <Link href='https://tutorials.dylanplayer.com' className={styles.navigationDrawerLink}><a className={styles.navigationDrawerLink}>Tutorials</a></Link>
           </div>
         </div>
       </div>
