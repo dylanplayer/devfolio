@@ -36,7 +36,7 @@ const Portfolio = ({ projects }: InferGetServerSidePropsType<typeof getServerSid
         <Container gap={0}>
           <Row justify='center' align='center' wrap='wrap' fluid>
             {
-              projects.map((project:ProjectData, index:number) => {
+              projects.reverse().map((project:ProjectData, index:number) => {
                 return (
                   <ProjectCard
                     key={index}
