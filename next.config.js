@@ -2,20 +2,20 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['dylanplayer.s3.us-west-1.amazonaws.com'],
+    domains: ["dylanplayer-devfolio.s3.us-west-1.amazonaws.com"],
   },
   async redirects() {
     return [
       {
-        source: '/tutorials/:page*',
-        destination: 'https://tutorials.dylanplayer.com/tutorials/:page*',
+        source: "/tutorials/:page*",
+        destination: "https://tutorials.dylanplayer.com/tutorials/:page*",
         permanent: true,
       },
-    ]
+    ];
   },
-}
+};
 
-const withMDX = require('@next/mdx')({
+const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [],
@@ -25,14 +25,15 @@ const withMDX = require('@next/mdx')({
   },
 });
 
-module.exports = nextConfig, withMDX({
-  // Append the default value with md extensions
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-  webpackDevMiddleware: config => {
-    config.watchOptions = {
-      poll: 1000,
-      aggregateTimeout: 300,
-    }
-    return config
-  },
-})
+(module.exports = nextConfig),
+  withMDX({
+    // Append the default value with md extensions
+    pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+    webpackDevMiddleware: (config) => {
+      config.watchOptions = {
+        poll: 1000,
+        aggregateTimeout: 300,
+      };
+      return config;
+    },
+  });
